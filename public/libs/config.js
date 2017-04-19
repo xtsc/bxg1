@@ -1,0 +1,18 @@
+requirejs.config({
+	baseUrl:'/public',
+	paths:{
+		'jquery':'assets/jquery/jquery.min',
+		'bootstrap':'assets/bootstrap/js/bootstrap.min',
+		'cookie':'assets/jquery-cookie/jquery.cookie',
+		'jqueryForm':'assets/jquery-form/jquery.form',
+		'echarts':'assets/echarts/echarts.min',
+		'template':'assets/artTemplate/template-web',
+		'nprogress':'assets/nprogress/nprogress'
+	},
+	shim:{
+		'bootstrap':{
+			exports:'bootstrap',
+			deps:['jquery']
+		}
+	}
+});
